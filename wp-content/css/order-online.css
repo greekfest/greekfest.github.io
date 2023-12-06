@@ -1,0 +1,111 @@
+/** STATIC - BEGIN **/
+
+.gloriafood-button,
+.glf-button {
+    display: inline-block;
+    padding: 20px;
+    margin: 2px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+
+    color: #fff !important;
+    text-decoration: none !important;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+
+    border-radius: 3px;
+    background-clip: padding-box;
+    background-color: #ef8b17;
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSIxMDAlIiB4Mj0iNTAlIiB5Mj0iLTEuNDIxMDg1NDcxNTIwMmUtMTQlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAuMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+    background-image: -moz-linear-gradient(bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%);
+    background-image: -o-linear-gradient(bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%);
+    background-image: linear-gradient(bottom, rgba(0,0,0,.1) 0%, rgba(255,255,255,.1) 100%);
+
+    transition: filter 0.4s ease-out;
+}
+
+.gloriafood-button.reservation,
+.glf-button.reservation {
+    background-color: #334f66;
+}
+
+.gloriafood-button:hover,
+.glf-button:hover {
+    filter: brightness(110%);
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.gloriafood-button.reservation:hover,
+.glf-button.reservation:hover {
+    filter: brightness(110%);
+}
+
+.gloriafood-button:active,
+.glf-button:active {
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/** STATIC - END **/
+
+
+/** DYNAMIC - BEGIN **/
+
+.glf-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999997;
+    background-color: rgba(0,0,0,0);
+    transition: background-color .15s linear;
+}
+
+.glf-backdrop-visible {
+    background-color: rgba(0,0,0,0.35);
+}
+
+.glf-preloader-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.glf-preloader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: solid 15px rgba(255, 255, 255, 0.2);
+    border-top-color: #fff;
+
+    -webkit-animation: glf-spin 1s infinite linear;
+    animation: glf-spin 1s infinite linear;
+    transform-origin: 50%;
+}
+
+@keyframes glf-spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes glf-spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/** DYNAMIC - END **/
