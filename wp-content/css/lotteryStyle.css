@@ -1,0 +1,15 @@
+.raffle a:link {
+  text-decoration: none;
+}
+
+.raffle a:visited {
+  text-decoration: none;
+}
+
+.raffle a:hover {
+  text-decoration: underline;
+}
+
+.raffle a:active {
+  text-decoration: underline;
+}
