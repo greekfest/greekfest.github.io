@@ -13,3 +13,7 @@
 .raffle a:active {
   text-decoration: underline;
 }
+
+.raffle a:link {
+  color:#1a80b6
+}
