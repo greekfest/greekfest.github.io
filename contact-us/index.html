@@ -234,7 +234,7 @@ Halifax NS, B3N 1R4</span></span></span></p>
 
 		<div class="avada-footer-scripts">
 			<script type="text/javascript">var fusionNavIsCollapsed=function(e){var t,n;window.innerWidth<=e.getAttribute("data-breakpoint")?(e.classList.add("collapse-enabled"),e.classList.remove("awb-menu_desktop"),e.classList.contains("expanded")||(e.setAttribute("aria-expanded","false"),window.dispatchEvent(new Event("fusion-mobile-menu-collapsed",{bubbles:!0,cancelable:!0}))),(n=e.querySelectorAll(".menu-item-has-children.expanded")).length&&n.forEach(function(e){e.querySelector(".awb-menu__open-nav-submenu_mobile").setAttribute("aria-expanded","false")})):(null!==e.querySelector(".menu-item-has-children.expanded .awb-menu__open-nav-submenu_click")&&e.querySelector(".menu-item-has-children.expanded .awb-menu__open-nav-submenu_click").click(),e.classList.remove("collapse-enabled"),e.classList.add("awb-menu_desktop"),e.setAttribute("aria-expanded","true"),null!==e.querySelector(".awb-menu__main-ul")&&e.querySelector(".awb-menu__main-ul").removeAttribute("style")),e.classList.add("no-wrapper-transition"),clearTimeout(t),t=setTimeout(()=>{e.classList.remove("no-wrapper-transition")},400),e.classList.remove("loading")},fusionRunNavIsCollapsed=function(){var e,t=document.querySelectorAll(".awb-menu");for(e=0;e<t.length;e++)fusionNavIsCollapsed(t[e])};function avadaGetScrollBarWidth(){var e,t,n,l=document.createElement("p");return l.style.width="100%",l.style.height="200px",(e=document.createElement("div")).style.position="absolute",e.style.top="0px",e.style.left="0px",e.style.visibility="hidden",e.style.width="200px",e.style.height="150px",e.style.overflow="hidden",e.appendChild(l),document.body.appendChild(e),t=l.offsetWidth,e.style.overflow="scroll",t==(n=l.offsetWidth)&&(n=e.clientWidth),document.body.removeChild(e),jQuery("html").hasClass("awb-scroll")&&10<t-n?10:t-n}fusionRunNavIsCollapsed(),window.addEventListener("fusion-resize-horizontal",fusionRunNavIsCollapsed);</script>	<script type="module">
-		import { Workbox } from "\/wp-wp-content\/css\/workbox-window.prod.js";
+		import { Workbox } from "wp-content\/css\/workbox-window.prod.js";
 
 		if ( 'serviceWorker' in navigator ) {
 			window.wp = window.wp || {};
@@ -258,16 +258,6 @@ var wpcf7 = {"api":{"root":"https:\/\/greekfesttogo.com\/wp-json\/","namespace":
 <script type='text/javascript' src='/wp-content/css/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
 <script type='text/javascript' src='/wp-content/css/public-scripts.js?ver=2.3.6' id='restaurant_system_public_scripts_js-js'></script>
 <script type='text/javascript' src='https://greekfesttogo.com/wp-content/uploads/fusion-scripts/427624078c3e5e799da1c652563d784c.min.js?ver=3.10.1' id='fusion-scripts-js'></script>
-				<script type="text/javascript">
-				jQuery( document ).ready( function() {
-					var ajaxurl = 'https://greekfesttogo.com/wp-admin/admin-ajax.php';
-					if ( 0 < jQuery( '.fusion-login-nonce' ).length ) {
-						jQuery.get( ajaxurl, { 'action': 'fusion_login_nonce' }, function( response ) {
-							jQuery( '.fusion-login-nonce' ).html( response );
-						});
-					}
-				});
-								</script>
 							<script>
 				jQuery( document ).ready( function() {
 					var $ul            = jQuery( '#wp-admin-bar-awb-form-group' ),
