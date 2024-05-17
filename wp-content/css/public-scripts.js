@@ -13,7 +13,12 @@ var _glf_setInterval = setInterval( function () {
     300 );
 function runOpeningHours(){
     let opening_hours = processOpeningHours( window.openingHours );
-    jQuery( '.glf-widget-opening-hours .content' ).append( opening_hours );
+    const elements = jQuery( '.glf-widget-opening-hours .content' );
+    for (const element of elements) {
+        if (element.innerText === '') {
+            element.innerHTML = opening_hours;
+        }
+    }
 }
 
 function processOpeningHours( openingHoursData ) {
