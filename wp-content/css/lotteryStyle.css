@@ -15,5 +15,11 @@
 }
 
 #raffle a:link {
-  color:#1a80b6
+  color: #1a80b6;
+}
+
+body .restaurant-links a,
+body .restaurant-links a:before,
+body .restaurant-links a:after {
+  color: #ff9800 !important;
 }
