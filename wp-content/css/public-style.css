@@ -49,6 +49,9 @@
     font-size: 14px;
 }
 
+body .fusion-main-menu > ul > li.fusion-dropdown-menu {
+    overflow: visible;
+}
 
 /** Restaurant menu - END **/
 
